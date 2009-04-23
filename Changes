@@ -1,6 +1,9 @@
 Changelog for Module-Install-AssertOS
 =====================================
 
+0.06	Thu Apr 23 20:41:32 BST 2009
+	- Refactored the author side into a separate sub
+
 0.04	Thu Apr 23 13:08:48 BST 2009
 	- Had left in some debugging messages. Doh.
 

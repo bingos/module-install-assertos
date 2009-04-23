@@ -6,7 +6,7 @@ use base qw(Module::Install::Base);
 use File::Spec;
 use vars qw($VERSION);
 
-$VERSION = '0.04';
+$VERSION = '0.06';
 
 sub assertos {
   my $self = shift;
@@ -18,6 +18,12 @@ sub assertos {
      Devel::AssertOS->import( @oses );
      return;
   }
+
+  _author_side( @oses );
+}
+
+sub _author_side {
+  my @oses = @_;
 
   require Data::Compare;
 
