@@ -6,7 +6,7 @@ use base qw(Module::Install::Base);
 use File::Spec;
 use vars qw($VERSION);
 
-$VERSION = '0.02';
+$VERSION = '0.04';
 
 sub assertos {
   my $self = shift;
@@ -61,7 +61,6 @@ sub assertos {
     $/ = $lsep;
     open(PM, '>'.File::Spec->catfile(@dircomponents, $file)) ||
         die("Can't write ".File::Spec->catfile(@dircomponents, $file).": $!");
-    print STDOUT $pm;
     print PM $pm;
     print "Copied $fullfilename to\n       ".File::Spec->catfile(@dircomponents, $file)."\n";
     close(PM);

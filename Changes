@@ -1,5 +1,8 @@
 Changelog for Module-Install-AssertOS
 =====================================
 
+0.04	Thu Apr 23 13:08:48 BST 2009
+	- Had left in some debugging messages. Doh.
+
 0.02	Thu Apr 23 12:54:27 BST 2009
 	- Initial public release
