@@ -8,7 +8,7 @@ license 'perl';
 perl_version '5.006';
 build_requires 'Test::More' => 0.47;
 requires 'Module::Install' => 0.85;
-requires 'Devel::CheckOS' => 1.6;
+requires 'Devel::CheckOS' => 1.61;
 requires 'Data::Compare' => 1.21;
 eval "auto_set_repository";
 WriteAll();

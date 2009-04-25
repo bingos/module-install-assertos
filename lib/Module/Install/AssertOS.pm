@@ -6,7 +6,7 @@ use base qw(Module::Install::Base);
 use File::Spec;
 use vars qw($VERSION);
 
-$VERSION = '0.06';
+$VERSION = '0.08';
 
 sub assertos {
   my $self = shift;

@@ -1,6 +1,10 @@
 Changelog for Module-Install-AssertOS
 =====================================
 
+0.08	Sat Apr 25 14:41:09 BST 2009
+	- Update the required version of Devel::CheckOS
+	  as per Dave Cantrell's recommendation
+
 0.06	Thu Apr 23 20:41:32 BST 2009
 	- Refactored the author side into a separate sub
 
