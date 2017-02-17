@@ -1,6 +1,13 @@
 Changelog for Module-Install-AssertOS
 =====================================
 
+0.12  Fri Feb 17 13:08:47 GMT 2017
+  - Handle perls without dot in @INC correctly
+  - Use autolicense to generate license file
+
+0.10  Sun Apr 26 22:50:34 BST 2009
+  - Added a test to check whether the files get copied correctly
+
 0.08	Sat Apr 25 14:41:09 BST 2009
 	- Update the required version of Devel::CheckOS
 	  as per Dave Cantrell's recommendation

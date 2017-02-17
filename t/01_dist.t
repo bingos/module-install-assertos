@@ -4,12 +4,13 @@ use Test::More tests => 3;
 use File::Path      qw[rmtree];
 use Capture::Tiny   qw[capture_merged];
 
-# Cleanup 
+# Cleanup
 eval { rmtree('dist') };
 mkdir 'dist' or die "$!\n";
 chdir 'dist' or die "$!\n";
 open MFPL, '>Makefile.PL' or die "$!\n";
-print MFPL <<EOF;
+print MFPL <<'EOF';
+use if ! ( grep { $_ eq '.' } @INC ), qw[lib .];
 use strict;
 use inc::Module::Install;
 name 'Foo-Bar';
